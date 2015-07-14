@@ -69,6 +69,18 @@ $(document).ready(function() {
   });
 });
 
+var inName = function() {
+    var name = "Sanjay Rajashekhar";
+    var firstName;
+    var lastName;
+    var nameArr = name.trim().split(" ");
+
+    firstName = nameArr[0].slice(0, 1).toUpperCase() + nameArr[0].slice(1).toLowerCase();
+    lastName = nameArr[1].toUpperCase();
+
+    return firstName + " " + lastName;
+};
+
 /*
 The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
 */
